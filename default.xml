@@ -16,6 +16,10 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
   
+  <remote  name="tg"
+           fetch="https://github.com/tioguda"
+           revision="xosp-mm" />
+  
   <remote  name="xosp"
            fetch="https://github.com/XOSP-Project"
            revision="xosp-mm" />
@@ -31,16 +35,16 @@
 
 <!-- BEGIN XOSP Repos -->
 
-  <project path="build" name="android_build" remote="xosp" groups="pdk" >
+  <project path="build" name="android_build" remote="tg" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="platform_manifest" remote="xosp" />
+  <project path="android" name="platform_manifest" remote="tg" />
   <project path="bionic" name="android_bionic" remote="xosp" groups="pdk" />
   <project path="frameworks/base" name="android_frameworks_base" remote="xosp" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/native" name="android_frameworks_native" remote="xosp" groups="pdk" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="xosp" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="xosp" groups="pdk-fs" />
-  <project path="vendor/xosp" name="android_vendor_xosp" remote="xosp" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="tg" groups="pdk-fs" />
+  <project path="vendor/xosp" name="android_vendor_xosp" remote="tg" />
   <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="github"/>
   <project path="external/sepolicy" name="android_external_sepolicy" remote="xosp" groups="pdk" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="xosp" groups="pdk-fs" />
@@ -55,7 +59,12 @@
   <project path="packages/apps/XOSPFileManager" name="android_packages_apps_XOSPFileManager" remote="xosp" />
   <project path="system/core" name="android_system_core" remote="xosp" groups="pdk" />
 
-  <!--<include name="snippets/xosp_devices_deps.xml" /> -->
+
+  <!-- OTA -->
+  <project name="android_packages_apps_XOSPOTA" path="packages/apps/XOSPOTA" remote="tg" />
+  <project path="xosp_ota" name="xosp_ota" remote="tg" >
+      <copyfile src="ota_conf" dest="ota_conf" />
+  </project>
 
 <!-- END OF XOSP Repos -->
   
