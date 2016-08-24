@@ -34,27 +34,27 @@
 
 <!-- BEGIN XOSP Repos -->
 
-  <project path="build" name="android_build" remote="xosp" groups="pdk" >
+  <project path="build" name="android_build" remote="karthick" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="android_bionic" remote="xosp" groups="pdk" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="xosp" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="xosp" groups="pdk" />
-  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="xosp" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="xosp" groups="pdk-fs" />
-  <project path="vendor/xosp" name="android_vendor_xosp" remote="xosp" />
+  <project path="bionic" name="android_bionic" remote="karthick" groups="pdk" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="karthick" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="karthick" groups="pdk" />
+  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="karthick" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="karthick" groups="pdk-fs" />
+  <project path="vendor/xosp" name="android_vendor_xosp" remote="karthick" />
   <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="github"/>
-  <project path="external/sepolicy" name="android_external_sepolicy" remote="xosp" groups="pdk" />
+  <project path="external/sepolicy" name="android_external_sepolicy" remote="karthick" groups="pdk" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="xosp" groups="pdk-fs" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="xosp" groups="pdk-fs" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote= "xosp" groups="pdk-fs" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="karthick" groups="pdk-fs" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote= "karthick" groups="pdk-fs" />
   <project path="xosp_apps" name="xosp_apps" remote="karthick" />
-  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="xosp" groups="pdk-fs" />
-  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="xosp" groups="pdk-fs" />
+  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="karthick" groups="pdk-fs" />
+  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="karthick" groups="pdk-fs" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="xosp" />
   <project path="packages/apps/XOSPSetupWizard" name="android_packages_apps_SetupWizard" remote="xosp" />
-  <project path="packages/apps/XOSPFileManager" name="android_packages_apps_XOSPFileManager" remote="xosp" />
-  <project path="system/core" name="android_system_core" remote="xosp" groups="pdk" />
+  <project path="packages/apps/XOSPFileManager" name="android_packages_apps_XOSPFileManager" remote="karthick" />
+  <project path="system/core" name="android_system_core" remote="karthick" groups="pdk" />
 
 <!-- END OF XOSP Repos -->
   
